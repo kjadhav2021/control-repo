@@ -1,2 +1,45 @@
+#---
+#message: "This node is using common data"
+
 ---
-message: "This node is using common data"
+  users:
+    'itops1':
+      comment: 'IT support team id'
+      groups: ['Users','Power User']
+      password: 'puppetlabs'
+    'admin':
+      comment: 'Admin user'
+      groups: ['Administrator']
+      password: 'puppetlabs'
+    'john':
+      comment: 'User account for John Doe'
+      groups: ['Users','Power User']
+      password: 'puppetlabs'
+    'bob':
+      comment: 'User account for Bob'
+      groups: ['Users']
+      password: 'puppetlabs'
+    'alice':
+      comment: 'User account for alice'
+      groups: ['Users']
+      password: 'puppetlabs'
+    'guest':
+      comment: 'User account for Guest'
+      groups: ['Guests']
+      password: 'guest'
+  groups:
+    'Users':
+      members: ['itops1','admin','john','bob','alice']
+      provider: 'window_adsi'
+    'Power Users':
+      members: ['itops1','john']
+      provider: 'window_adsi'
+    'Guests':
+      members: ['Guest']
+      provider: 'window_adsi'
+    'Administrator':
+      members: ['Admin']
+      provider: 'window_adsi'
+  classes:
+    - profile::winuser
+

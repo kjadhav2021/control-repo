@@ -16,5 +16,5 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-git:    'https://github.com/kjadhav2021/winuser',
-branch: 'main'
+mod "winuser",
+  :git => "git@github.com:kjadhav2021/control-repo.git"

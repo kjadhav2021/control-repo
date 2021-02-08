@@ -29,9 +29,3 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
-
-
-node 'win-agent-1.platform9.puppet.net' {
-  include(lookup('classes', Array[String], 'unique'))
-}
-

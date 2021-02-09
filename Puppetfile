@@ -17,4 +17,5 @@ forge 'https://forge.puppet.com'
 #  branch: 'docs_experiment'
 
 mod "winuser",
-  :git => "git@github.com:kjadhav2021/control-repo.git"
+  :git => "git@github.com:kjadhav2021/control-repo.git",
+  :branch => "main" 

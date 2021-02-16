@@ -16,6 +16,11 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-mod 'winuser',
-  git: 'https://github.com/kjadhav2021/winuser.git',
-  branch: 'main'
+#mod 'winuser',
+#  git: 'https://github.com/kjadhav2021/winuser.git',
+#  branch: 'main'
+
+mod 'usercreate',
+  :git    => 'git@github.com:kjadhav2021/usercreate.git',
+  :branch => 'production'
+

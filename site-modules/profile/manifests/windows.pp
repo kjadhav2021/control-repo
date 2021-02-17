@@ -5,5 +5,5 @@
 # @example
 #   include profile::windows
 class profile::windows {
-  include createuser
+  include users
 }

@@ -16,6 +16,9 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
+#installing module to set local security policy
+mod 'ayohrling-local_security_policy', '0.8.1'
+
 mod 'users',
   :git    => 'git@github.com:kjadhav2021/users.git',
   :branch => 'production'

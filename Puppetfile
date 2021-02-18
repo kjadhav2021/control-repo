@@ -18,6 +18,8 @@ forge 'https://forge.puppet.com'
 
 #installing module to set local security policy
 mod 'ayohrling-local_security_policy', '0.8.1'
+#installing acl module for managing file and directory permissions
+mod 'puppetlabs-acl', '3.2.1'
 
 mod 'users',
   :git    => 'git@github.com:kjadhav2021/users.git',

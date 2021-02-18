@@ -30,8 +30,8 @@ users:
     password: 'guest'
 groups:
   'Developers':
-    members: ['WIN-AGENT-1\Alice','WIN-AGENT-1\Bob']
+    members: ['Alice','Bob']
   'Applications':
-    members: ['WIN-AGENT-1\Webapp','WIN-AGENT-1\Smbuser']
+    members: ['Webapp','Smbuser']
 #classes:
 #  - profile::winuser

@@ -26,3 +26,6 @@ mod 'puppetlabs-registry', '3.2.0'
 mod 'users',
   :git    => 'git@github.com:kjadhav2021/users.git',
   :branch => 'production'
+
+# added to install windows features like IIS server
+mod 'puppet-windowsfeature', '3.2.2'

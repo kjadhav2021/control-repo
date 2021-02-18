@@ -16,10 +16,12 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-#installing module to set local security policy
+#Added entry to install module to set local security policy
 mod 'ayohrling-local_security_policy', '0.8.1'
-#installing acl module for managing file and directory permissions
+#Added to install acl module for managing file and directory permissions
 mod 'puppetlabs-acl', '3.2.1'
+#Added to install registry module for managing registry entries
+mod 'puppetlabs-registry', '3.2.0'
 
 mod 'users',
   :git    => 'git@github.com:kjadhav2021/users.git',

@@ -29,5 +29,5 @@ mod 'users',
 
 # added to install windows features like IIS server
 mod 'puppet-windowsfeature', '3.2.2'
-mod 'puppetlabs-iis', '7.2.0'
 mod 'puppetlabs-pwshlib', '0.7.4'
+mod 'puppetlabs-iis', '7.2.0'

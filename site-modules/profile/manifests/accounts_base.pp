@@ -22,10 +22,7 @@ class profile::accounts_base {
       members => $grpattrs['members'],
     }
   }
-  file { 'C:/acltestDir/':
-    ensure => 'directory',
-    path   => 'C:/acltestDir/',
-  }
+
   users::directory_rights { 'configure_rights_administrator':
     directory_path => 'C:/acltestDir/',
     account_name   => 'Administrator',

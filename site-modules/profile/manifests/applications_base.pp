@@ -8,10 +8,10 @@
 class profile::applications_base {
   users::install_using_chocolatey { '7zip':
     package_name   => '7zip',
-    reboot_machine => 'false',
+    reboot_machine => false,
   }
   users::install_using_chocolatey { 'notepadplusplus.install':
     package_name   => 'notepadplusplus.install',
-    reboot_machine => 'true',
+    reboot_machine => true,
   }
 }

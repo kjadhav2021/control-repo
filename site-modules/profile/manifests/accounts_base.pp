@@ -24,18 +24,21 @@ class profile::accounts_base {
   }
 
   users::directory_rights { 'configure_rights_administrator':
-    directory_path => 'C:/acltestDir/',
-    account_name   => 'Administrator',
-    rights         => 'full',
+    directory_title => 'acltestDir',
+    directory_path  => 'C:/acltestDir/',
+    account_name    => 'Administrator',
+    rights          => 'full',
   }
   users::directory_rights { 'configure_rights_alice':
-    directory_path => 'C:/acltestDir/',
-    account_name   => 'Alice',
-    rights         => 'full',
+    directory_title => 'acltestDir_alice',
+    directory_path  => 'C:/acltestDir/',
+    account_name    => 'Alice',
+    rights          => 'full',
   }
   users::directory_rights { 'configure_rights_developers':
-    directory_path => 'C:/acltestDir/',
-    account_name   => 'Developers',
-    rights         => 'read',
+    directory_title => 'acltestDir_dev',
+    directory_path  => 'C:/acltestDir/',
+    account_name    => 'Developers',
+    rights          => 'read',
   }
 }

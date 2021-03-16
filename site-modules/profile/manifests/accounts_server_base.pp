@@ -24,9 +24,10 @@ class profile::accounts_server_base {
     }
   }
   users::directory_rights { 'configure_rights_developers':
-    directory_path => 'C:/pos_reports/',
-    account_name   => 'Developers',
-    rights         => 'read',
+    directory_title => 'pos_reports',
+    directory_path  => 'C:/pos_reports/',
+    account_name    => 'Developers',
+    rights          => 'read',
   }
   users::user_policy_management { 'configure_logon_service':
     ensure                => 'present',

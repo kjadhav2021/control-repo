@@ -22,23 +22,60 @@ class profile::accounts_base {
       members => $grpattrs['members'],
     }
   }
-
-  users::directory_rights { 'configure_rights_administrator':
-    directory_title => 'acltestDir',
-    directory_path  => 'C:/acltestDir/',
-    account_name    => 'Administrator',
-    rights          => 'full',
+  # users::directory_rights { 'configure_rights_administrator':
+  #   directory_title => 'acltestDir',
+  #   directory_path  => 'C:/acltestDir/',
+  #   account_name    => 'Administrator',
+  #   rights          => 'full',
+  # }
+  # users::directory_rights { 'configure_rights_alice':
+  #   directory_title => 'acltestDir_alice',
+  #   directory_path  => 'C:/acltestDir/',
+  #   account_name    => 'Alice',
+  #   rights          => 'full',
+  # }
+  # users::directory_rights { 'configure_rights_developers':
+  #   directory_title => 'acltestDir_dev',
+  #   directory_path  => 'C:/acltestDir/',
+  #   account_name    => 'Developers',
+  #   rights          => 'read',
+  # }
+  users::directory_rights {
+    'configure_rights_administrator':
+      directory_title => 'acltestDir',
+      directory_path  => 'C:/acltestDir/',
+      account_name    => 'Administrator',
+      rights          => 'full',
+    ;
+    'configure_rights_alice':
+      directory_title => 'acltestDir_alice',
+      # directory_path  => 'C:/acltestDir/',
+      account_name    => 'Alice',
+      rights          => 'full',
+    ;
+    'configure_rights_developers':
+      directory_title => 'acltestDir_dev',
+      # directory_path  => 'C:/acltestDir/',
+      account_name    => 'Developers',
+      rights          => 'read',
+    ;
   }
-  users::directory_rights { 'configure_rights_alice':
-    directory_title => 'acltestDir_alice',
-    directory_path  => 'C:/acltestDir/',
-    account_name    => 'Alice',
-    rights          => 'full',
-  }
-  users::directory_rights { 'configure_rights_developers':
-    directory_title => 'acltestDir_dev',
-    directory_path  => 'C:/acltestDir/',
-    account_name    => 'Developers',
-    rights          => 'read',
-  }
+  # { 'configure_rights_administrator':
+  #   directory_title => 'acltestDir',
+  #   directory_path  => 'C:/acltestDir/',
+  #   account_name    => 'Administrator',
+  #   rights          => 'full',
+  # }
+  # users::directory_rights { 'configure_rights_alice':
+  #   directory_title => 'acltestDir_alice',
+  #   directory_path  => 'C:/acltestDir/',
+  #   account_name    => 'Alice',
+  #   rights          => 'full',
+  # }
+  # users::directory_rights { 'configure_rights_developers':
+  #   directory_title => 'acltestDir_dev',
+  #   directory_path  => 'C:/acltestDir/',
+  #   account_name    => 'Developers',
+  #   rights          => 'read',
+  # }
 }

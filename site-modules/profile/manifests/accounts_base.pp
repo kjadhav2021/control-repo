@@ -40,22 +40,23 @@ class profile::accounts_base {
   #   account_name    => 'Developers',
   #   rights          => 'read',
   # }
+  $directory = 'C:/acltestDir/'
   users::directory_rights {
     'configure_rights_administrator':
       directory_title => 'acltestDir',
-      directory_path  => 'C:/acltestDir/',
+      directory_path  => $directory,
       account_name    => 'Administrator',
       rights          => 'full',
     ;
     'configure_rights_alice':
       directory_title => 'acltestDir_alice',
-      directory_path  => 'C:/acltestDir/',
+      directory_path  => $directory,
       account_name    => 'Alice',
       rights          => 'full',
     ;
     'configure_rights_developers':
       directory_title => 'acltestDir_dev',
-      directory_path  => 'C:/acltestDir/',
+      directory_path  => $directory,
       account_name    => 'Developers',
       rights          => 'read',
     ;

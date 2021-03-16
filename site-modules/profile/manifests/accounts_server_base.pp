@@ -23,10 +23,6 @@ class profile::accounts_server_base {
       members => $grpattrs['members'],
     }
   }
-  file { 'C:/pos_reports/':
-    ensure => 'directory',
-    path   => 'C:/pos_reports/',
-  }
   users::directory_rights { 'configure_rights_developers':
     directory_path => 'C:/pos_reports/',
     account_name   => 'Developers',

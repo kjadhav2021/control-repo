@@ -33,5 +33,39 @@ groups:
     members: ['Alice','Bob']
   'Applications':
     members: ['Webapp','Smbuser']
+users_server:
+  'itops1':
+    comment: 'IT support team id'
+    groups: ['BUILTIN\Power Users']
+    password: 'puppetlabs'
+  'webapp':
+    comment: 'user id for web application'
+    groups: ['BUILTIN\Users']
+    password: 'puppetlabs'
+  'smbuser':
+    comment: 'user id for smb file share'
+    groups: ['BUILTIN\Users']
+    password: 'puppetlabs'
+  'john':
+    comment: 'User account for John Doe'
+    groups: ['BUILTIN\Users','BUILTIN\Power Users']
+    password: 'puppetlabs'
+  'bob':
+    comment: 'User account for Bob'
+    groups: ['BUILTIN\Users']
+    password: 'puppetlabs'
+  'alice':
+    comment: 'User account for alice'
+    groups: ['BUILTIN\Users']
+    password: 'puppetlabs'
+  'guest':
+    comment: 'User account for Guest'
+    groups: ['BUILTIN\Guests']
+    password: 'guest'
+groups_server:
+  'Developers':
+    members: ['Alice','Bob']
+  'Applications':
+    members: ['Webapp','Smbuser']
 #classes:
 #  - profile::winuser
